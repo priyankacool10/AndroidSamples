@@ -1,0 +1,256 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+   android:layout_height="match_parent">
+  <LinearLayout 
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:orientation="vertical"
+   android:paddingLeft="@dimen/activity_horizontal_margin"
+   android:paddingRight="@dimen/activity_horizontal_margin"
+   android:paddingTop="@dimen/activity_vertical_margin"
+   android:layout_gravity="center"
+    >
+     <LinearLayout
+       android:id="@+id/row2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+     
+       android:orientation="vertical"
+        >
+   <ImageView
+      android:id="@+id/imageView1"
+      android:layout_width="400dp"
+      android:layout_height="250dp"
+     
+      android:layout_centerHorizontal="true"
+      
+      android:src="@drawable/sunset" />
+   <!-- android:layout_below="@id/imageView1" -->
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       
+       android:layout_centerHorizontal="true"
+       android:text="Original"
+       android:onClick="original"/>
+   </LinearLayout>
+
+   <LinearLayout
+      
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/row1"
+       android:layout_alignParentBottom="true"
+       android:orientation="horizontal"
+       android:layout_centerHorizontal="true" >
+
+   		<Button
+     		android:id="@+id/button1"
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+      		android:onClick="doGreyscale"
+      		android:text="@string/gray" />
+   
+   		<Button
+      		android:id="@+id/button2"
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+      		android:onClick="doInvert"
+      		android:text="@string/invert" />
+
+   		<Button
+      		android:id="@+id/button3"
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+      
+      		android:onClick="createSepiaToningEffect"
+      		android:text="@string/sepia" />
+   		</LinearLayout>
+		<LinearLayout
+       
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/row1"
+       android:layout_alignParentBottom="true"
+       android:orientation="horizontal"
+       android:layout_centerHorizontal="true" >
+   		<Button
+   		    android:id="@+id/button4"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		    android:onClick="embossEffect"
+   		    android:text="@string/emboss" />
+    
+     	<Button
+      		android:id="@+id/button5"
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+  
+      		android:onClick="doBrightness"
+      		android:text="@string/brightness" />
+     
+     
+   
+    	 <Button
+     		 android:id="@+id/button6"
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+  
+     		android:onClick="sharpen"
+      		android:text="@string/sharpen" />
+    	 </LinearLayout>
+    	   <LinearLayout
+         android:id="@+id/row1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" 
+         android:orientation="horizontal"
+         android:layout_above="@id/row2"
+         android:layout_centerHorizontal="true">
+    	 <Button
+     		 android:id="@+id/button7"
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+  
+     		android:onClick="engraveEffect"
+      		android:text="@string/engrave" />
+    	  <Button
+     		 android:id="@+id/button8"
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+  
+     		android:onClick="applySnowEffect"
+      		android:text="@string/snowy" />
+    	   
+    	   <Button
+     		 android:id="@+id/button9"
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+  
+     		android:onClick="smooth"
+      		android:text="@string/smooth" />
+    	   </LinearLayout>
+    	    <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" 
+         android:orientation="horizontal"
+         android:layout_above="@id/row2"
+         android:layout_centerHorizontal="true">
+    	   <Button
+     		 android:id="@+id/button10"
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+  
+     		android:onClick="applyGaussianBlur"
+      		android:text="@string/blur" />
+	
+    	 <Button
+     		 android:id="@+id/button11"
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+  
+     		android:onClick="Watermark"
+      		android:text="@string/watermark" />
+    	 <Button
+     		 android:id="@+id/button12"
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+  
+     		android:onClick="createContrast"
+      		android:text="@string/contrast" />
+    	 </LinearLayout>
+    	  <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" 
+         android:orientation="horizontal"
+         android:layout_above="@id/row2"
+         android:layout_centerHorizontal="true">
+    	  <Button
+     		 android:id="@+id/button13"
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+  
+     		android:onClick="boost"
+      		android:text="@string/boost" />
+    	   
+    	   <Button
+     		 android:id="@+id/button14"
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+  
+     		android:onClick="applyHueFilter"
+      		android:text="@string/hue" />
+    	   
+    	   <Button
+     		 android:id="@+id/button15"
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+  
+     		android:onClick="applySaturationFilter"
+      		android:text="@string/saturation" />
+	</LinearLayout>
+	<LinearLayout
+         android:id="@+id/row4"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" 
+         android:orientation="horizontal"
+         android:layout_centerHorizontal="true">
+    	 <Button
+     		 android:id="@+id/button16"
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+  
+     		android:onClick="applyReflection"
+      		android:text="@string/reflection" />
+    	 <Button
+     		 android:id="@+id/button17"
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+  
+     		android:onClick="tintImage"
+      		android:text="@string/Tint" />
+    	  <Button
+     		 android:id="@+id/button18"
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+  
+     		android:onClick="applyMeanRemoval"
+      		android:text="@string/mean" />
+    	  </LinearLayout>
+    	   <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" 
+         android:orientation="horizontal"
+         
+         android:layout_centerHorizontal="true">
+    	   <Button
+     		 android:id="@+id/button19"
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+  
+     		android:onClick="applyFleaEffect"
+      		android:text="@string/flea" />
+    	   
+    	   <Button
+     		 android:id="@+id/button20"
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+  
+     		android:onClick="doGamma"
+      		android:text="@string/gamma" />
+	
+    	 <Button
+     		 android:id="@+id/button21"
+      		android:layout_width="wrap_content"
+      		android:layout_height="wrap_content"
+  
+     		android:onClick="combineImages"
+      		android:text="@string/combine" />
+    	 
+    </LinearLayout>
+   
+	
+</LinearLayout>
+
+</ScrollView>
